@@ -17,11 +17,11 @@ header='@HWWI:1:FCX:1:15:6329:1045 1:N:0:2'
 for x in range(100000):
     read=''
     val=random.randint(0,len(seq)-50)
-    
+    val2=random.randint(0,50)    
     for y in range(0,50):
-        if x%2!=0:
+        if int(x)<=1000:
             
-            val2=random.randint(0,50)
+            #val2=random.randint(0,50)
             if int(y)==int(val2):
                 read+=random_base_insert[random.randint(0,3)]
                 
